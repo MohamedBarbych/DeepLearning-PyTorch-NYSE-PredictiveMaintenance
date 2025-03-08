@@ -107,3 +107,26 @@ Learn and practice PyTorch by implementing Deep Neural Networks for:
 ### **1. Clone the Repository**
 ```bash
 git clone <repository-link>
+```
+
+### 2. Install Dependencies
+
+```bash
+pip install torch torchvision numpy pandas matplotlib seaborn scikit-learn skorch imblearn
+```
+
+### 3. Execute Notebooks
+
+- Run notebooks directly using **Jupyter Notebook** or **Google Colab**.
+- Ensure **CUDA** is available to leverage GPU acceleration for optimal performance.
+
+---
+
+## 👨‍💻 **Author**
+- **Mohamed BARBYCH**  
+- **FST Tangier, UAE, Morocco**  
+
+
+
+
+Feel free to copy-paste directly into your README! 🚀
