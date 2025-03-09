@@ -215,7 +215,7 @@ To optimize the model, we used **GridSearchCV** to find the best:
 ---
 
 ## 📉 **6. Loss vs Epochs**
-![Loss vs Epochs](path/to/loss_vs_epochs.png)
+![image](https://github.com/user-attachments/assets/b9443db6-acbf-4c53-8f17-a89d49acfe22)
 
 ✔ **Loss is steadily decreasing**  
 ✔ **No overfitting** (Train and Test loss are close)
@@ -226,7 +226,7 @@ The model is **learning properly**, as both **training and test loss decrease sm
 ---
 
 ## 📈 **7. Accuracy vs Epochs**
-![Accuracy vs Epochs](path/to/accuracy_vs_epochs.png)
+![image](https://github.com/user-attachments/assets/cd3cd3dc-8b98-4316-8139-6a09613c4b0a)
 
 ✔ **Train and Test Accuracy improve together**  
 ✔ **Test Accuracy reaches over 90%**  
@@ -243,4 +243,53 @@ Precision | Recall | F1-Score | Support
 ---------------------------------------
 Class 0 | 0.95 | 0.92 | 0.93 | N samples
 Class 1 | 0.90 | 0.91 | 0.90 | N samples
-...
+```
+---
+
+## 💡 **Key Metrics Explained**
+- **Accuracy**: Measures overall correctness.
+- **Precision**: How many predicted failures were actual failures?
+- **Recall**: How many actual failures did the model detect?
+- **F1-Score**: Harmonic mean of Precision & Recall.
+- ✅ **Final Model Accuracy: 92%**
+
+---
+
+## 🛑 **9. Regularization and Overfitting Prevention**
+To **prevent overfitting**, we applied:
+- **L2 Regularization** (`weight_decay=1e-4`)
+- **Dropout (30%)** to randomly deactivate neurons.
+
+### 🔹 **Results Comparison**
+![image](https://github.com/user-attachments/assets/f4fb282e-8de5-4548-a14e-4fcada7f62a0)
+
+### 💡 **Observations**
+- The **regularized model achieves higher test accuracy**.
+- The **original model overfits slightly**, while the **regularized model generalizes better**.
+
+---
+
+## 🎯 **Final Summary**
+
+| Step                     | Key Findings                                      |
+|--------------------------|--------------------------------------------------|
+| **Data Cleaning**        | Dropped unused columns, encoded categories      |
+| **EDA**                 | Balanced dataset with SMOTE                      |
+| **DNN Model**           | Fully connected network with 2 hidden layers     |
+| **Hyperparameter Tuning** | Found optimal learning rate, neurons, and optimizer |
+| **Performance**         | 92% accuracy, strong F1-score                    |
+| **Regularization**      | Reduced overfitting, improved generalization     |
+
+🚀 **Conclusion:**  
+This model effectively predicts **machine failures** with **high accuracy** and is **robust against overfitting**.  
+**Regularization further enhances generalization.**
+
+---
+
+## 📌 **How to Run the Code**
+```bash
+# Install required dependencies
+pip install torch torchvision numpy pandas matplotlib seaborn scikit-learn skorch imblearn
+
+# Run the Python script
+python train_maintenance_model.py
