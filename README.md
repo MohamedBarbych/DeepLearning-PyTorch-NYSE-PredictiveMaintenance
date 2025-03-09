@@ -169,6 +169,7 @@ Before training the model, we **clean and preprocess the dataset**:
 ## 📊 **2. Exploratory Data Analysis (EDA)**
 - **Visualized class distribution** to detect imbalances.
 - **Analyzed feature correlations** to understand relationships.
+![image](https://github.com/user-attachments/assets/58132e73-ab2d-4caa-b57b-cb18f7992bf3)
 
 ---
 
