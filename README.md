@@ -33,6 +33,9 @@ Learn and practice PyTorch by implementing Deep Neural Networks for:
 - Cleaned and standardized data.
 - Analyzed feature correlations.
 - Visualized important relationships.
+![image](https://github.com/user-attachments/assets/127306ee-f706-4934-970a-9c1285d276b6)
+![image](https://github.com/user-attachments/assets/a5d4240a-b1ad-4ce6-9814-f689dc9a8aa6)
+
 
 ### 2. **Regression Model**
 - Developed Deep Neural Network using PyTorch.
@@ -45,6 +48,7 @@ Learn and practice PyTorch by implementing Deep Neural Networks for:
 ### 4. **Visualization**
 - Loss vs. Epochs (Training & Test)
 - Accuracy (R² Score) vs. Epochs (Training & Test)
+![image](https://github.com/user-attachments/assets/d928ce3d-f472-4b1f-87c0-d4605c75405b)
 
 ### 5. **Regularization**
 - Implemented Dropout & L2 regularization.
